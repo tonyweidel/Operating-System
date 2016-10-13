@@ -25,13 +25,19 @@ function App(n,m,s){
     };
     //Declare the instance function close here.
     this.close = function(){
-      if this.state "null"
-    }
+      if(this.state != null){
+        this.state = null
+        this.memory = this.memory*0
+      }
+    };
 }
 
 //Use the constructor to create 4 App objects below.
-
-
+var mindNode = new App(mindNode,active,2);
+var noodles = new App(noodles,active,5);
+var safari = new App(safari,null,0);
+var showbie = new App(showbie,active,24);
 
 //Declare an array named appList, and place all 4 of your apps in that array.
 //The order does not matter.
+var applist = [mindNode,noodles,safari,showbie];
